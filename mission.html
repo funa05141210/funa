@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>MY OPINION</title>
+    <meta charset="utf-8">
+    <meta name="description" content="私の考える無理して学校に行かなくても生きていける世界についての主張">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+ 
+  <body>
+    <!-- ヘッダー -->
+    <header>
+      <!-- ロゴ -->
+      <a href="index.html" id="logo"><img src="images/logo.png" alt="トップページに戻る"></a>
+  
+      <!-- PC用ナビゲーション -->
+      <nav id="nav-pc">
+        <a href="mission.html">MY OPINION</a>
+        <a href="product.html">REASON</a>
+        <a href="index.html#aboutus">ABOUT ME</a>
+        <a href="index.html#vision">VISION</a>
+        <a href="index.html#company">PROBLEM</a>
+        <a href="index.html#contact">CONTACT</a>
+      </nav>
+  
+      <!-- スマホ用メニューボタン -->
+      <img id="menu-sp" src="images/button-menu.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav-sp').style.display = 'block'">
+  
+      <!-- スマホ用ナビゲーション -->
+      <nav id="nav-sp">
+        <img id="close" src="images/button-close.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display = 'none'">
+        <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'"><img
+            src="images/logo-sp.png" alt="トップページに戻る"></a>
+        <a class="menu" href="mission.html" onclick="document.getElementById('nav-sp').style.display = 'none'">MY OPINION</a>
+        <a class="menu" href="product.html" onclick="document.getElementById('nav-sp').style.display = 'none'">REASON</a>
+        <a class="menu" href="index.html#aboutus" onclick="document.getElementById('nav-sp').style.display = 'none'">ABOUT
+          ME</a>
+        <a class="menu" href="index.html#vision"
+          onclick="document.getElementById('nav-sp').style.display = 'none'">VISION</a>
+        <a class="menu" href="index.html#company"
+          onclick="document.getElementById('nav-sp').style.display = 'none'">PROBLEM</a>
+        <a class="menu" href="index.html#contact"
+          onclick="document.getElementById('nav-sp').style.display = 'none'">CONTACT</a>
+        <div id="sns">
+          <a href="https://www.facebook.com/sejuku2013"><img src="images/button-facebook.png" alt="Facebookのリンク"></a>
+          <a href="https://twitter.com/samuraijuku"><img src="images/button-twitter.png" alt="Twitterのリンク"></a>
+          <a href="https://www.youtube.com/channel/UCCFOQO5aDK0xXam4cUQXT8g"><img src="images/button-youtube.png" alt="YouTubeのリンク"></a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <article>
+         <!--続いてMISSIONページのメインビジュアルを作成します。
+          メインビジュアルの中には英語の見出し、カタカナの見出し、パンくずリスト（現在開いているページ名）を表示します。-->
+          <section id="mission-main">
+            <div id="mission-title">
+              <h1>MY OPINION</h1>
+              <span></span>
+              <div>TOP > MY OPINION</div>
+            </div>
+          </section>
+          <section id="mission-s2dgs">
+            <h2 class="mission-h2">学校に行かなくても受けられる教育の構築</h2>
+            <p>私が取り組みたいのは、まず、研究してきた社会科を中心とした、学習参考サイト…辞書のようなもので、
+              単元ごとに、教科で学ぶ上でよく出てくる用語の説明をしたり、
+              関連動画（主にNHK for School)へのリンクなどを示し、困ったときに使えるサイトを作成する。<br>
+            次に、問題を解いていくアプリ開発。この時、学学調査などを基にした、今求められる教育に応じた学習問題に触れられるようにする。<br>
+          もし、いつかITの専門的な部署や職場で働くことになれば、メタバースなどを構築して、不登校の子どもが学べる仮想空間を作成したい。<br>
+        まだまだ私にできることは小さな事ばかりかもしれない。でも、教育に携わってきた経験を活かし、子どもも大人も救いたい。</p>
+          <img src="images/mission/5.jpg" alt="学ぶ子">
+          </section>
+          <!--左のカラム：画像を表示する-->
+          <section id="mission-5goals">
+            <div>
+              <img id="s2dgs-image" src="images/mission/mission-5goals.png" alt="5goals">
+            </div>
+            <div>
+              <div>
+                <img class="fivegoals-image-left" src="images/mission/mission-5goals01.png" alt="PCを操作する女の子">
+                <span class="fivegoals-number">01</span>
+                <h3 class="fivegoals-h3">本サイトで自分の考えを伝えよう</h3>
+                <p class="fivegoals-p">
+                  学校現場にいて、学校が「行かなくてはならない場」であり、人を苦しめていることを伝えます。その上で、私のすることの価値を広げます。また、これから作成する教育支援関連のアプリやサイトをつなぎ、ここが起点となるように改良を重ねます。
+                </p>
+              </div>
+      
+              <div>
+                <img class="fivegoals-image-right" src="images/mission/mission-5goals02.png" alt="PCを見つめる小さい女の子">
+                <span class="fivegoals-number">02</span>
+                <h3 class="fivegoals-h3">教材サイトを作成</h3>
+                <p class="fivegoals-p">
+                  社会科の単元ごとの関連語句とその意味を載せたサイトを作成します。困ったときに、そこを見て調べれば簡単に意味を調べられるようにします。必要に応じて、関連する動画に飛べるようにします。
+                </p>
+              </div>
+      
+              <div>
+                <img class="fivegoals-image-left" src="images/mission/mission-5goals03.png" alt="PCを操作する女性">
+                <span class="fivegoals-number">03</span>
+                <h3 class="fivegoals-h3">学習アプリの開発</h3>
+                <p class="fivegoals-p">
+                  学力学習状況調査問題などを参考に、今求められている力を基にした問題を作成し、なるべく授業に近い問題に触れられる学習アプリを開発します。
+                </p>
+              </div>
+      
+              <div>
+                <img class="fivegoals-image-right" src="images/mission/mission-5goals04.png" alt="笑顔で話し合う3人の男女">
+                <span class="fivegoals-number">04</span>
+                <h3 class="fivegoals-h3">教員の情報共有・交流の場づくり</h3>
+                <p class="fivegoals-p">
+                 本サイトで発信したことをもとに、意見を収集し、時にはその収集した意見を発信し、このサイトを通じて、教員の考えを広げていきます。また、私の教員経験の中で感じたことなどを広げ、役立たせます。
+                </p>
+              </div>
+      
+              <div>
+                <img class="fivegoals-image-left" src="images/mission/mission-5goals05.png" alt="障害を持つ男性が生き生きと働く様子">
+                <span class="fivegoals-number">05</span>
+                <h3 class="fivegoals-h3">新しい学び方の情報発信</h3>
+                <p class="fivegoals-p">
+                  民間フリースクールやオンライン学習、不登校支援などの記事を発信し、情報を広め、共有できるようにします。
+                </p>
+              </div>
+            </div>
+          </section>
+      </article>
+      <footer>
+        <div id="footer-logo">
+          <img src="images/logo-sp.png" alt="SocialTech">
+        </div>
+        <div id="footer-link">
+          <a href="mission.html">MY OPINION</a>
+          <a href="product.html">REASON</a>
+          <a href="index.html#aboutus">ABOUT ME</a>
+          <a href="index.html#vision">VISION</a>
+          <a href="index.html#company">PROBLEM</a>
+          <a href="index.html#contact">CONTACT</a>
+        </div>
+        <div id="sns-footer">
+          <a href="https://www.facebook.com/sejuku2013"><img src="images/button-facebook.png" alt="Facebookのリンク"></a>
+          <a href="https://twitter.com/samuraijuku"><img src="images/button-twitter.png" alt="Twitterのリンク"></a>
+          <a href="https://www.youtube.com/channel/UCCFOQO5aDK0xXam4cUQXT8g"><img src="images/button-youtube.png" alt="YouTubeのリンク"></a>
+          <span id="copyright">&copy;2022 FUNA, Inc. All Rights Reserved. </span>
+        </div>
+      </footer>
+    </main>
+  </body>
+ 
+  </html>

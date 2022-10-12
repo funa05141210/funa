@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+  <!--htmlタグでHTMLを記述する範囲を指定する-->
+  <head>
+    <!--タイトルや説明文など、Webページの各種設定を記述する-->
+    <title>不登校の子どもの居場所を作ろう</title>
+    <!--上はこのページのタイトル。ブラウザのタブの部分に表示されます。-->
+    <meta charset="utf-8">
+    <!--文字コードはutf-8を指定しましょう。文字コードの種類はいくつかありますが、現在は一般的にutf-8が使われます。-->
+    <meta name="description" content="疲弊する教育現場。子どもにとっても大人にとってもしんどいものとなっているのが現状。どうすればいいのか一緒に考えましょう。">
+    <!--検索エンジンの検索結果やSNSでシェアしたときに表示されるWebサイトの説明文を、metaタグのname属性で以下のように記述しましょう。-->
+    <meta name="viewport" conten="width=device-width, initial-scale=1.0">
+    <!--ビューポートとは、PCやスマートフォンで「Webページの画面をどのように表示させるか」という設定のことです。ビューポートは以下のように設定します。
+
+     幅（width）：device-widthを指定して、画面サイズに合わせていっぱいに広げる
+     拡大率（initial-scale）：等倍（1.0）を指定して、拡大縮小を行わない-->
+    <link rel="stylesheet" href="style.css">
+    <!--index.htmlからstyle.cssを読み込み、スタイル（装飾）が適用されるように設定します。-->
+  </head>
+  <body>
+    <!--実際にブラウザに表示される内容（記事など）を記述する-->
+    <header>
+      <!--ヘッダーはheaderタグをbodyタグの中に記述することで作成できます。-->
+      <a href="index.html" id="logo"><img src="images/logo.png" alt"トップページに戻る"></a>
+      <!--続いて、imgタグを使ってヘッダーにロゴを表示します。また、ロゴをクリックしたときにトップページ（index.html）に移動できるように、aタグでindex.htmlへのハイパーリンクを設定します。-->
+       <!--PC用ナビゲーション-->
+       <nav id="nav-pc">
+        <a href="mission.html">MY OPINION</a>
+        <a href="product.html">REASON</a>
+        <a href="index.html#aboutus">ABOUT ME</a>
+        <a href="index.html#vision">VISION</a>
+        <a href="index.html#company">PROBLEMS</a>
+        <a href="index.html#contact">CONTACT</a>
+       </nav>
+       <!-- スマホ用メニューボタン -->
+     <img id="menu-sp" src="images/button-menu.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav-sp').style.display = 'block'">
+     <!-- スマホ用ナビゲーション -->
+     <nav id="nav-sp">
+      <img id="close" src="images/button-close.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display = 'none'">
+      <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'"><img
+          src="images/logo-sp.png" alt="トップページに戻る"></a>
+      <a class="menu" href="mission.html" onclick="document.getElementById('nav-sp').style.display = 'none'">MISSION</a>
+      <a class="menu" href="product.html" onclick="document.getElementById('nav-sp').style.display = 'none'">PRODUCT</a>
+      <a class="menu" href="index.html#aboutus" onclick="document.getElementById('nav-sp').style.display = 'none'">ABOUT
+        US</a>
+      <a class="menu" href="index.html#vision"
+        onclick="document.getElementById('nav-sp').style.display = 'none'">VISION</a>
+      <a class="menu" href="index.html#company"
+        onclick="document.getElementById('nav-sp').style.display = 'none'">COMPANY</a>
+      <a class="menu" href="index.html#contact"
+        onclick="document.getElementById('nav-sp').style.display = 'none'">CONTACT</a>
+      <div id="sns">
+        <a href="https://www.facebook.com/sejuku2013"><img src="images/button-facebook.png" alt="Facebookのリンク"></a>
+        <a href="https://twitter.com/samuraijuku"><img src="images/button-twitter.png" alt="Twitterのリンク"></a>
+        <a href="https://www.youtube.com/channel/UCCFOQO5aDK0xXam4cUQXT8g"><img src="images/button-youtube.png" alt="YouTubeのリンク"></a>
+      </div>
+    </nav>
+
+    </header>
+    <main>
+      <!--mainタグ：中身がメインコンテンツであることを表す
+          articleタグ：中身が記事であることを表す-->
+      <article>
+        <!--まずは、メインビジュアルを表示する場所をsectionタグで確保します。このあとCSSでスタイルを適用するために、idをmain-visualに設定しておきます。-->
+        <section id="main-visual">
+          <div id="main-message">
+            <h1>無理して学校に<br>行かなくても<br>生きていける<br>世界に<br></h1>
+            <p>ITで教育を変える</p>
+          </div>
+          <img src="images/index/index-main.png" alt="PCの周りに集まる多国籍の仲間たち">
+        </section>
+        <!--sectionタグとdivタグを記述して、セクション内の区切りを作る
+セクション左側のコンテンツ（画像、見出し、説明文）を作る
+セクション右側のコンテンツ（画像、見出し、説明文）を作る-->
+        <section id="mission">
+          <h2 class="index-h2">MY OPINION</h2>
+          <div id="mission-flex">
+            <div>
+              <img id="mission-photo" src="images/index/index-mission.png" alt="屋外のベンチで写真を撮影する多国籍の仲間たち">
+              <h3>学校に縛られない世界の実現</h3>
+              <p>
+                学校に行きたくないのに、行かされる子ども、それを支えるために疲弊する大人<br>
+                本来、知的欲求を満たすため、楽しんで学びに向かうのが学校だったはず。<br>
+                いつの間にか「行かなくてはならない場所」「行くと苦しくなる場所」と感じる子どもも大人も増えていった。<br>
+                じゃあ、「行けない子ども」は行かなくてもいいのではないか？そう考え、ここで意見を提案したいと考えた。
+              </p>
+
+            </div>
+            <div>
+              <img id="s2dgs" src="images/index/1.jpg" alt="S2DGs">
+              <h3>SDGs 質の高い教育をみんなに：正直、学校に行って学びに向かえない子どもにとって、質の高い教育を受けられているとは言い難い現状。海外の子どもだけでなく、日本の子どもの「質の高い受けるべき教育」について考えたい。</h3>
+              <a href="mission.html">
+                <img src="images/button-more.png" alt="もっとみる">
+                <!--「もっとみる」ボタンはmission.htmlにリンクしています。-->
+              </a>
+            </div>
+          </div>
+        </section>
+        <!--プロダクト-->
+        <section id="product">
+          <h2 class="index-h2">REASON</h2>
+          <div>
+            <div id="product-left">
+              <div>
+                <img class="product-photo" src="images/index/index-mantoman.png" alt="PCでコードを書く男性">
+                <div class="product-explain">
+                  <span>ICTツール</span>
+                  <h3>学校という場にこだわらなくても</h3>
+                  <p>1人1台端末配布により、どの子もがタブレットを活用できる状況になった。<br>学校に行けなくても人と学べるようになった。</p>
+                </div>
+              </div>
+              <div>
+                <img class="product-photo" src="images/index/不登校.jpg" alt="不登校の子どもと親">
+                <div class="product-explain">
+                  <span>学校に行くのがしんどい子ども</span>
+                  <h3> HSC,発達障がい,起立性調整障害…etc</h3>
+                  <p>学校に行くことで大きなストレスを抱え、学びに向かえない・心身の成長が阻害される子どもも多い。<br>行けないという思いを周りが理解しなければならない。</p>
+                </div>
+              </div>
+
+            </div>
+            <div id="product-right">
+              <div>
+                <img class="product-photo" src="images/index/2.jpg" alt="学級崩壊">
+                <div class="product-explain">
+                  <span>他児への影響</span>
+                  <h3>トラブル・やる気のなさの蔓延</h3>
+                  <p>左下のような状況で困っている子どもの影響は大きい。<br>トラブルが起きたり、やる気のなさが周りの子どもにも影響する。</p>
+                </div>
+              </div>
+              <div>
+                <img class="product-photo" src="images/index/3.jpg" alt="鬱病の男性">
+                <div class="product-explain">
+                  <span>教員の心の病。負担感増大</span>
+                  <h3>教員の志願者減少・離職者と休職者の増大</h3>
+                  <p>学びに向かえる状況ではない子どもと向き合い、「学ばせなければならない」教師は辛い。<br>真面目で、子どものためにと想う教師の方が余計に辛い。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <a id="product-more" href="product.html">
+              <img src="images/button-more.png" alt="もっとみる">
+            </a>
+          </div>
+        </section>
+        <!--ABOUT ME-->
+        <section id="aboutus">
+          <h2 class="index-h2">ABOUT ME</h2>
+          <h3>本HP製作者フウナの自己紹介</h3>
+          <div>
+            <table class="culture-table">
+              <tr>
+                <td>
+                  <span class="culture-num">01</span>
+                </td>
+                <td>
+                  <span class="culture-en">my career</span>
+                  <span class="culture-jp">経歴</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <!--空のセル-->
+                </td>
+                <td>
+                  <p class="culture-description">
+                    約16年間、小学校現場で教諭として勤務。某国立大学附属小学校で社会科を研究。
+                    県の教科部会副部会長・事務局長を務めた。
+                    また、部会以外の県の事業・市の事業の推進委員に選ばれる。
+                    校内においては、校内研究主任・生徒指導主任を担当。
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="culture-num">02</span>
+                </td>
+                <td>
+                  <span class="culture-en">trigger</span>
+                  <span class="culture-jp">本サイト立ち上げのきっかけ</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <!--空のセル-->
+                </td>
+                <td>
+                  <p class="culture-description">
+                    登校意欲を持てない多くの子どものいる学級の担任経験。
+                    IT活用で不登校の子どもの生きる場を与える活動がニュースに取り上げられ、同じ思いでいることを発信したかったから。
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="culture-num">03</span>
+                </td>
+                <td>
+                  <span class="culture-en">other than work</span>
+                  <span class="culture-jp">仕事以外の私</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <!--空のセル-->
+                </td>
+                <td>
+                  <p class="culture-description">
+                    娘が二人（６歳と１０カ月）がいます。<br>趣味はオンラインゲーム(eso)、サッカー、プログラミング（スクールに入っています）<br>
+                  </p>
+                </td>
+              </tr>
+            </table>
+            <img class="culture-img" src="images/index/1.png" alt="いらすと。教師">
+          </div>
+          <img class="culture-img2" src="images/index/4.jpg" alt="挨拶する子どもと教師">
+      </section>
+    </article>
+  </main>
+</body>
+
+</html>
+
+        </section>
+        <!--VISION-->
+        <section id="vision">
+          <h2 class="index-h2">VISION</h2>
+          <h3>7つの方法</h3>
+          <div>
+            <div class="vision-box">
+              <img src="images/index/vision-01.png" alt="01">
+              <span>
+                <h4>thought</h4>
+                <h5>考える</h5>
+                <p>目の前の子どもは本当に学校に行かないと学べないのか？健全に成長できないのか？「学校に行く」でないとだめなのか？</p>
+              </span>
+            </div>
+            <div class="vision-box">
+              <img src="images/index/vision-02.png" alt="02">
+              <span>
+                <h4>free school</h4>
+                <h5>民間フリースクール</h5>
+                <p>学校でなくて、他の場で関わり合いながら学びたいなら、お薦め。</p>
+              </span>
+            </div>
+            <div class="vision-box">
+              <img src="images/index/vision-03.png" alt="03">
+              <span>
+                <h4>juku</h4>
+                <h5>塾</h5>
+                <p>人と関わりたい。でも学校の人以外と…であれば塾もいいかもしれない。個別に対応していく塾もある。既にたくさんあるから選べる。</p>
+              </span>
+            </div>
+            <div class="vision-box">
+              <img src="images/index//vision-04.png" alt="04">
+              <span>
+                <h4>online juku</h4>
+                <h5>オンライン塾</h5>
+                <p>遠く離れていても、学習を一緒に見てくれる。関わってもらえる。自宅でできる。外に出にくい、慣れた環境が良いのであればお薦め。</p>
+              </span>
+            </div>
+            <div class="vision-box">
+              <img src="images/index/vision-05.png" alt="05">
+              <span>
+                <h4>learning Site</h4>
+                <h5>学習サイト</h5>
+                <p>自分のペースで、自分で学んでいく方が良い。人と関わるのは嫌だという子どもにはお薦め。
+                  今ある教育系の動画を整理して、自分の学びを深められる総合サイトがあれば…。
+                </p>
+              </span>
+            </div>
+            <div class="vision-box">
+              <img src="images/index/vision-06.png" alt="06">
+              <span>
+                <h4>online learning</h4>
+                <h5>オンライン学習</h5>
+                <p>学校への関心があるのであれば、通わなくても、その学校とつながれる。私は実際に学校現場でやっていた（難病の子・コロナの子）。
+                  </p>
+              </span>
+            </div>
+            <div class="vision-box">
+              <img src="images/index/vision-07.png" alt="07">
+              <span>
+                <h4>learning apps</h4>
+                <h5>学習アプリ・ソフト</h5>
+                <p>既にいくつもある。自分で問題を解きながら、基礎学力を定着させていく。これも人に合わなくても自分のペースでできる。</p>
+              </span>
+            </div>
+          </div>
+        </section>
+        <br><hr>
+        <h1>特に、5,6,7に取り組んでいく。自分でサイトを立ち上げ、アプリを作成し、活用できるようにする。</h1>
+        <br>
+        <!--まずはsectionタグを記述して、COMPANYのセクションを表示するエリアを確保します。
+          また、h2タグとh3タグを記述して、セクション全体の見出しを作成します。-->
+          <section id="company">
+            <h2 class="index-h2">PROBLEMS</h2>
+            <h3>想定される課題</h3>
+            <!--tableタグを使って表で作成します。
+              左側の列には「会社名」や「所在地」などの見出し、右側の列にはその内容を記述します。-->
+              <table id="company-table">
+                <tr>
+                  <th class="tableheader-first">集団で創り上げる経験</th>
+                  <td class="cell-first">チームワーク・課題の共有・達成感様々なことを学校教育で経験している。一人では難しい。<br>
+                  必要であればボランティアをしたり、仲間と協働できるゲームで経験すればいい。
+                  </td>
+                </tr>
+                <tr>
+                  <th class="tableheader">友達づくり</th>
+                  <td class="cell">色々な子どものいる学校で関わり合うからこそ、人との関わり方を学び、一生付き合える友だちと出会えるかもしれない。<br>
+                  学校という狭い場でいいのか？もっとグローバルに色々な人とインターネットでつながれる時代だと思う。</td>
+                </tr>
+                <tr>
+                  <th class="tableheader">生活リズムの習慣化</th>
+                  <td class="cell">朝起きて、夕方まで働く社会人の生活リズムのように、規則正しい生活スタイルを得る。健康的。<br>
+                  この生活リズム、決まった時間の学びと決まった時間の休憩。これによって苦しめられることもある。</td>
+                </tr>
+                <tr>
+                  <th class="tableheader">人と一緒だからこそ限界を超えられる</th>
+                  <td class="cell">人と関わり合い、時に競い合い、比べ合い、高め合える。自分の位置がわかる。<br>
+                  それによって傷つく子どもも多い。合わない子どもも多くいる。</td>
+                </tr>
+                <tr>
+                  <th class="tableheader">金銭的負担</th>
+                  <td class="cell">公教育だからこそ、教科書無償配布など国や地方公共団体の支援が受けられる<br>
+                  このデメリットは大きい。選択できる学び方に支援があればいい。現状、解決できない。</td>
+                </tr>
+                <tr>
+                  <th class="tableheader">虐待防止</th>
+                  <td class="cell">学校に来て、教師の目などがあるからこそ、虐待や子どもの生活実態の状況把握ができる。<br>
+                  そもそもこれは学校の役目か？確かに実際、今担っているが。</td>
+                </tr>
+                <tr>
+                  <th class="tableheader">学校に行きたい子ども</th>
+                  <td class="cell">行きたいけれど、保護者が行かせてくれない。ということも考えられる。<br>
+                  段階的にではあるが、選択できることが普及し、ガイドラインなどの整備がなされるまでは、選択できるかどうかを教育委員会などで協議・許可する必要がある。。</td>
+                </tr>
+
+              </table>
+          </section>
+          <!--お問い合わせフォーム-->
+          <section id="contact">
+            <h2 class="index-h2">CONTACT</h2>
+            <h3>ご意見・ご感想</h3>
+              <form action="https://api.staticforms.xyz/submit" method="post">
+                <input type="text" name="honeypot" style="display:none">
+                <!-- STATIC FORMSのアクセスキー -->
+                <input type="hidden" name="accessKey" value="1eca46a5-5bc0-43bd-9ab8-04d6915e462d">
+                <!--メールのタイトル-->
+                <input type="hidden" name="subject" value="お問い合わせフォーム" />
+                <!--送信先のメールアドレスをvalueに設定する-->
+                <input type="hidden" name="replyTo" value="tomo_blue12@yahoo.co.jp">
+                <!--redirectToのURLは公開後のURLへリンクする-->
+                <input type="hidden" name="redirectTo" value="">
+              <div>
+                <div class="contact-heding">
+                  <label class="contact-label">お名前（ニックネーム可）<span class="contact-span">必須</span></label>
+                </div>
+                <div class="contact-form">
+                  <input type="text" name="name" placeholder="入力してください" class="contact-textbox">
+                </div>
+              </div>
+              <div>
+                <div class="contact-heading">
+                  <label class="contact-label">フリガナ<span class="contact-span">必須</span></label>
+                </div>
+                <div>
+                  <input type="text" name="hurigana" placeholder="入力してください" class="contact-textbox">
+                </div>
+              </div>
+              <div>
+                <div class="contact-heading">
+                  <label class="contact-label">メールアドレス<span class="contact-span">必須</span></label>
+                </div>
+                <div>
+                  <input type="text" name="email" placeholder="入力してください" class="contact-textbox">
+                </div>
+              </div>
+              <div>
+                <div class="contact-heading">
+                  <label class="contact-label">ご意見・ご感想<span class="contact-span">必須</span></label>
+                </div>
+                <div>
+                  <textarea class="contact-textarea" placeholder="入力してください。右下で伸ばせます。" name="message"></textarea>
+                </div>
+              </div>
+              <div>
+                <div class="contact-heading">
+                  <label class="contact-label">あなたの考え<span class="contact-span">必須</span></label>
+                </div>
+                <div>
+                  <input class="radiobutton" type="radio" value="tel" name="contact" checked><label>本サイトの考えに賛成</label>
+                  <input class="radiobutton" type="radio" value="mail" name="contact"><label>本サイトの考えに反対</label><br><br>
+                </div>
+                <div>
+                  <div class="contact-heading">
+                    <label class="contact-label">個人情報の取り扱い</label>
+                  </div>
+                  <div>
+                    <details>
+                      <summary>お問い合わせフォームの個人情報の取り扱いについて</summary>
+                      <div>
+                        <span>１．名称</span><br>
+                        FUNA.jp<br><br>
+                        <span>２．個人情報保護管理者（若しくはその代理人）<br>
+                        FUNA<br><br>
+                        <span>３．個人情報の利用目的</span><br>
+                        ・本サイト及び本サイトに関連する情報の提供又はそれらに関する連絡のため<br>
+                        ・ユーザーの本人確認のため<br>
+                        ・様々なご意見を収集し、本サイトをよりよくするため<br>
+                        <br><br>
+                        <span>４．個人情報の取り扱い業務の委託</span><br>
+                        個人情報の取扱業務の全部または一部を外部に業務委託する場合があります。<br>
+                        その際、弊社は、個人情報を適切に保護できる管理体制を敷き実行していることを条件として<br>
+                        委託先を厳選したうえで、機密保持契約を委託先と締結し、お客様の個人情報を厳密に管理させます。<br><br>
+                        
+                        <span>５．あなたの考え・ご意見・ご感想の活用について</span><br><br>
+                        いただいたご意見・ご感想を場合によっては、本サイトに掲載・紹介させていただきます。予めご了承ください。
+                      </div>
+                    </details>
+                    <input type="checkbox" name="agree">
+                    <span>個人情報の取り扱いについてご同意いただける場合は、チェックをしてください。</span>
+                  </div>
+                </div>
+              </div>
+              <input type="image" value="Submit" src="images/button-submit.png" alt="送信する">
+            </form>
+          </section>
+          <h2>まだSNSは運用しておりません。侍エンジニアリングさんにつながります。</h2>
+      </article>
+      <footer>
+        <div id="footer-logo">
+          <img src="images/logo-sp.png" alt="SocialTech">
+          <div id="footer-link">
+            <a href="mission.html">MY OPINION</a>
+            <a href="product.html">REASON</a>
+            <a href="index.html#aboutus">ABOUT ME</a>
+            <a href="index.html#vision">VISION</a>
+            <a href="index.html#company">PROBLEMS</a>
+            <a href="index.html#contact">CONTACT</a>
+           
+          </div>
+          <div id="sns-footer">
+            <a href="https://www.facebook.com/sejuku2013"><img src="images/button-facebook.png" alt="Facebookのリンク"></a>
+            <a href="https://twitter.com/samuraijuku"><img src="images/button-twitter.png" alt="Twitterのリンク"></a>
+            <a href="https://www.youtube.com/channel/UCCFOQO5aDK0xXam4cUQXT8g"><img src="images/button-youtube.png" alt="YouTubeのリンク"></a>
+            
+            <span id="copyright">&copy;2022 FUNA, Inc. All Rights Reserved. </span>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+
+  </body>
+</html>
